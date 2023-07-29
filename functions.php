@@ -138,8 +138,9 @@ add_action( 'widgets_init', 'elite_estates_widgets_init' );
  * Enqueue scripts and styles.
  */
 function elite_estates_scripts() {
-	wp_enqueue_style( 'elite_estates-style', get_stylesheet_uri(), array(), _S_VERSION );
-	wp_style_add_data( 'elite_estates-style', 'rtl', 'replace' );
+	wp_enqueue_style( 'elite_estates-style-main', get_stylesheet_uri(), array(), _S_VERSION );
+	wp_style_add_data( 'elite_estates-style-main', 'rtl', 'replace' );
+	wp_enqueue_style( 'elite_estates-style-ui', get_template_directory_uri() . '/css/style.css', array(), _S_VERSION );
 
 	wp_enqueue_script( 'elite_estates-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
 
