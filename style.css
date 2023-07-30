@@ -495,8 +495,8 @@ ol {
 	list-style: decimal;
 }
 
-li > ul,
-li > ol {
+li>ul,
+li>ol {
 	margin-bottom: 0;
 	margin-left: 1.5em;
 }
@@ -653,10 +653,25 @@ textarea {
 }
 
 .main-navigation ul {
-	display: none;
+	display: flex;
 	list-style: none;
 	margin: 0;
 	padding-left: 0;
+}
+
+.menu-menu-principal-container {
+	opacity: 0;
+	max-height: 0;
+	transition-delay: .1s, .5s;
+	transition: opacity .3s, max-height .3s;
+}
+
+@media (min-width: 768px) {
+	.menu-menu-principal-container {
+		opacity: 1;
+		max-height: none;
+		transition: none;
+	}
 }
 
 .main-navigation ul ul {
@@ -665,7 +680,7 @@ textarea {
 	position: absolute;
 	top: 100%;
 	left: -999em;
-	z-index: 99999;
+	z-index: 1;
 }
 
 .main-navigation ul ul ul {
@@ -673,8 +688,8 @@ textarea {
 	top: 0;
 }
 
-.main-navigation ul ul li:hover > ul,
-.main-navigation ul ul li.focus > ul {
+.main-navigation ul ul li:hover>ul,
+.main-navigation ul ul li.focus>ul {
 	display: block;
 	left: auto;
 }
@@ -683,8 +698,8 @@ textarea {
 	width: 200px;
 }
 
-.main-navigation ul li:hover > ul,
-.main-navigation ul li.focus > ul {
+.main-navigation ul li:hover>ul,
+.main-navigation ul li.focus>ul {
 	left: auto;
 }
 
@@ -700,13 +715,18 @@ textarea {
 /* Small menu. */
 .menu-toggle,
 .main-navigation.toggled ul {
-	display: block;
+	display: flex;
+}
+
+.main-navigation.toggled .menu-menu-principal-container {
+	opacity: 1;
+	max-height: 300px;
 }
 
 @media screen and (min-width: 37.5em) {
 
 	.menu-toggle {
-		display: none;
+		display: none;	
 	}
 
 	.main-navigation ul {
@@ -715,10 +735,8 @@ textarea {
 }
 
 .site-main .comment-navigation,
-.site-main
-.posts-navigation,
-.site-main
-.post-navigation {
+.site-main .posts-navigation,
+.site-main .post-navigation {
 	margin: 0 0 1.5em;
 }
 
