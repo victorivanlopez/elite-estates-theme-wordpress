@@ -72,7 +72,7 @@
 			<?php if (is_front_page()) : ?>
 				<div class="container">
 					<div class="header-content">
-						<h1 class="header-heading">Encuentra tu casa de lujo al mejor precio</h1>
+						<h1 class="header-heading">Bienvenido a la excelencia inmobiliaria con Elite Estates</h1>
 
 						<!-- TODO: Buscador -->
 
