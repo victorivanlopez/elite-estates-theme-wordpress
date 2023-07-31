@@ -122,7 +122,7 @@ p {
 
 .main-navigation {
   width: auto;
-  margin-top: 2.5rem;
+  margin-top: 2rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -190,7 +190,7 @@ p {
 @media (min-width: 768px) {
   .header-content {
     padding-top: 10rem;
-    max-width: 50rem;
+    max-width: 60rem;
   }
 }
 
