@@ -87,7 +87,7 @@ p {
 }
 
 .site-header {
-  background-image: linear-gradient(90deg, rgba(59, 72, 98, .9) 0, rgba(59, 72, 98, .9)), url(../img/header-bg.jpg);
+  background-image: linear-gradient(90deg, rgba(44, 51, 51, .9) 0, rgba(44, 51, 51, .8)), url(../img/header-bg.jpg);
   background-repeat: no-repeat;
   background-position: top;
   position: relative;
@@ -167,7 +167,7 @@ p {
   }
 
   .main-navigation a:hover {
-    color: #e6e6e6;
+    color: #A5C9CA;
   }
 }
 
@@ -182,6 +182,10 @@ p {
     font-size: 2rem;
   }
 }
+
+.site-header .main-navigation .current-menu-item a{
+  color: #A5C9CA;
+} 
 
 .header-content {
   color: white;
@@ -206,7 +210,7 @@ p {
 
 /* FOOTER */
 .footer {
-  background-color: #3b4862;
+  background-color: #395b64;
   padding-top: 5rem;
 }
 
@@ -263,7 +267,7 @@ p {
 }
 
 .footer-copyright {
-  background-color: #283142;
+  background-color: #2C3333;
   color: white;
   margin: 5rem 0 0 0;
   padding: 1rem 0;
@@ -287,7 +291,7 @@ p {
   }
 
   .footer-copyright a:hover {
-    color: #e6e6e6;
+    color: #A5C9CA;
   }
 }
 
