@@ -1,4 +1,5 @@
 <?php
+
 /**
  * The template for displaying the footer
  *
@@ -11,24 +12,37 @@
 
 ?>
 
-	<footer id="colophon" class="site-footer container">
-		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'elite_estates' ) ); ?>">
+<footer id="colophon" class="site-footer footer">
+	<div class="footer-grid container">
+		<div class="footer-widget">
+			<h3 class="footer-heading">Navegación</h3>
+			<nav class="footer-navegacion">
 				<?php
-				/* translators: %s: CMS name, i.e. WordPress. */
-				printf( esc_html__( 'Proudly powered by %s', 'elite_estates' ), 'WordPress' );
+				wp_nav_menu(
+					array(
+						'theme_location' => 'menu-1',
+						'menu_id'        => 'primary-menu',
+					)
+				);
 				?>
-			</a>
-			<span class="sep"> | </span>
-				<?php
-				/* translators: 1: Theme name, 2: Theme author. */
-				printf( esc_html__( 'Theme: %1$s by %2$s.', 'elite_estates' ), 'elite_estates', '<a href="https://github.com/victorivanlopez">Víctor Iván López</a>' );
-				?>
-		</div><!-- .site-info -->
-	</footer><!-- #colophon -->
+			</nav>
+		</div>
+
+		<div class="footer-widget">
+			<h3 class="footer-heading">Nosotros</h3>
+			<p class="footer-text">Nos enorgullecemos de ser tu compañero de confianza. Nuestra pasión por bienes raíces y nuestro compromiso con la excelencia nos impulsan a brindarte un servicio excepcional en cada paso del camino.</p>
+		</div>
+
+		<div class="footer-widget">
+			<img class="footer-logo" src="<?php echo get_template_directory_uri(); ?>/img/logo.png" alt="Logotipo">
+		</div>
+	</div>
+	<p class="footer-copyright">&copy;<?php echo date('Y') ?>. Desarrollado por <a href="#">Víctor Iván López</a></p>
+</footer><!-- #colophon -->
 </div><!-- #page -->
 
 <?php wp_footer(); ?>
 
 </body>
+
 </html>

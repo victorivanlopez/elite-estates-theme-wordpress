@@ -647,19 +647,19 @@ textarea {
 
 /* Navigation
 --------------------------------------------- */
-.main-navigation {
-	display: block;
-	width: 100%;
+.site-header .main-navigation {
+	/* display: block;
+	width: 100%; */
 }
 
-.main-navigation ul {
+.site-header .main-navigation ul {
 	display: flex;
 	list-style: none;
 	margin: 0;
 	padding-left: 0;
 }
 
-.menu-menu-principal-container {
+.site-header .menu-menu-principal-container {
 	opacity: 0;
 	max-height: 0;
 	transition-delay: .1s, .5s;
@@ -667,14 +667,14 @@ textarea {
 }
 
 @media (min-width: 768px) {
-	.menu-menu-principal-container {
+	.site-header .menu-menu-principal-container {
 		opacity: 1;
 		max-height: none;
 		transition: none;
 	}
 }
 
-.main-navigation ul ul {
+.site-header .main-navigation ul ul {
 	box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
 	float: left;
 	position: absolute;
@@ -683,53 +683,53 @@ textarea {
 	z-index: 1;
 }
 
-.main-navigation ul ul ul {
+.site-header .main-navigation ul ul ul {
 	left: -999em;
 	top: 0;
 }
 
-.main-navigation ul ul li:hover>ul,
-.main-navigation ul ul li.focus>ul {
+.site-header .main-navigation ul ul li:hover>ul,
+.site-header .main-navigation ul ul li.focus>ul {
 	display: block;
 	left: auto;
 }
 
-.main-navigation ul ul a {
+.site-header .main-navigation ul ul a {
 	width: 200px;
 }
 
-.main-navigation ul li:hover>ul,
-.main-navigation ul li.focus>ul {
+.site-header .main-navigation ul li:hover>ul,
+.site-header .main-navigation ul li.focus>ul {
 	left: auto;
 }
 
-.main-navigation li {
+.site-header .main-navigation li {
 	position: relative;
 }
 
-.main-navigation a {
+.site-header .main-navigation a {
 	display: block;
 	text-decoration: none;
 }
 
 /* Small menu. */
-.menu-toggle,
-.main-navigation.toggled ul {
+.site-header .menu-toggle,
+.site-header .main-navigation.toggled ul {
 	display: flex;
 }
 
-.main-navigation.toggled .menu-menu-principal-container {
+.site-header .main-navigation.toggled .menu-menu-principal-container {
 	opacity: 1;
 	max-height: 300px;
 }
 
 @media screen and (min-width: 37.5em) {
 
-	.menu-toggle {
+	.site-header .menu-toggle {
 		display: none;	
 	}
 
-	.main-navigation ul {
+	.site-header .main-navigation ul {
 		display: flex;
 	}
 }
@@ -767,7 +767,7 @@ textarea {
 
 .post,
 .page {
-	margin: 0 0 1.5em;
+	/* margin: 0 0 1.5em; */
 }
 
 .updated:not(.published) {
