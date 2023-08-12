@@ -51,12 +51,26 @@ h2 {
   font-size: 4rem;
 }
 
+h2::after {
+  content: '';
+  display: block;
+  height: .8rem;
+  width: 15rem;
+  margin-top: 1rem;
+  background-image: linear-gradient(90deg,#395b64 0,#395b64 50%,#A5C9CA 0,#A5C9CA);
+}
+
+h2 span {
+  font-weight: 700;
+}
+
 h3 {
   font-size: 3rem;
 }
 
 [class$="heading"] {
   margin: 2rem 0;
+  font-weight: 400;
 }
 
 a {
