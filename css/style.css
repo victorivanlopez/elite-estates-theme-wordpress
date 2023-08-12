@@ -1,9 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Roboto:wght@400;700&display=swap');
 
 :root {
+  /* COLORS */
+  --green-dark:  #395b64;
+  --green-light: #a5c9ca;
+  --white:       #FFFFFF;
+  --black:       #2C3333;
   /* FONTS */
   --font-primary: 'Open Sans', sans-serif;
   --font-headings: 'Roboto', cursive;
+
 }
 
 html {
@@ -57,7 +63,7 @@ h2::after {
   height: .8rem;
   width: 15rem;
   margin-top: 1rem;
-  background-image: linear-gradient(90deg,#395b64 0,#395b64 50%,#A5C9CA 0,#A5C9CA);
+  background-image: linear-gradient(90deg, var(--green-dark) 0, var(--green-dark) 50%, var(--green-light) 0, var(--green-light));
 }
 
 h2 span {
@@ -171,7 +177,7 @@ p {
 }
 
 .main-navigation a {
-  color: white;
+  color: var(--white);
   font-size: 2rem;
 }
 
@@ -181,7 +187,7 @@ p {
   }
 
   .main-navigation a:hover {
-    color: #A5C9CA;
+    color: var(--green-light);
   }
 }
 
@@ -197,12 +203,12 @@ p {
   }
 }
 
-.site-header .main-navigation .current-menu-item a{
-  color: #A5C9CA;
-} 
+.site-header .main-navigation .current-menu-item a {
+  color: var(--green-light);
+}
 
 .header-content {
-  color: white;
+  color: var(--white);
 }
 
 @media (min-width: 768px) {
@@ -224,7 +230,7 @@ p {
 
 /* FOOTER */
 .footer {
-  background-color: #395b64;
+  background-color: var(--green-dark);
   padding-top: 5rem;
 }
 
@@ -252,13 +258,13 @@ p {
 }
 
 .footer-heading {
-  color: white;
+  color: var(--white);
   font-size: 2rem;
   text-transform: uppercase;
 }
 
 .footer-text {
-  color: white;
+  color: var(--white);
   margin: 0;
 }
 
@@ -272,7 +278,7 @@ p {
 }
 
 .footer-navegacion ul a {
-  color: white;
+  color: var(--white);
   font-size: 1.8rem;
 }
 
@@ -281,14 +287,15 @@ p {
 }
 
 .footer-copyright {
-  background-color: #2C3333;
-  color: white;
+  background-color: var(--black);
+  color: var(--white);
   margin: 5rem 0 0 0;
   padding: 1rem 0;
   text-align: center;
   font-size: 1.2rem;
   font-weight: 700;
 }
+
 @media (min-width: 768px) {
   .footer-copyright {
     font-size: 1.4rem;
@@ -296,7 +303,7 @@ p {
 }
 
 .footer-copyright a {
-  color: white;
+  color: var(--white);
 }
 
 @media (hover: hover) {
@@ -305,7 +312,7 @@ p {
   }
 
   .footer-copyright a:hover {
-    color: #A5C9CA;
+    color: var(--green-light);
   }
 }
 
