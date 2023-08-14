@@ -289,7 +289,7 @@ img {
 
 .property-price {
   font-weight: 700;
-  font-size: 2.8rem;
+  font-size: 3rem;
   margin: 1.5rem 0;
 }
 
@@ -306,6 +306,10 @@ img {
   font-weight: 700;
   margin: 0 .6rem;
   width: .4rem;
+}
+
+.property-meta span {
+  font-weight: 700;
 }
 
 .property-location {

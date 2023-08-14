@@ -20,7 +20,7 @@ get_header();
 				<p class="property-price">MXN 2,500,000</p>
 				<ul class="property-meta">
 					<li class="property-beds"><span>3</span> Rec.</li>
-					<li class="property-baths"><span>1</span> Baños</li>
+					<li class="property-baths"><span>1</span> Baño(s)</li>
 					<li class="property-parking"><span>1</span> Estac.</li>
 				</ul>
 				<p class="property-location">Villa Verde, Colima</p>
@@ -41,7 +41,7 @@ get_header();
 				<p class="property-price">MXN  5,700</p>
 				<ul class="property-meta">
 					<li class="property-beds"><span>2</span> Rec.</li>
-					<li class="property-baths"><span>1</span> Baños</li>
+					<li class="property-baths"><span>1</span> Baño(s)</li>
 					<li class="property-parking"><span>1</span> Estac.</li>
 				</ul>
 				<p class="property-location">Residencia Victoria, Colima</p>
@@ -62,7 +62,7 @@ get_header();
 				<p class="property-price">MXN 3,200,000</p>
 				<ul class="property-meta">
 					<li class="property-beds"><span>4</span> Rec.</li>
-					<li class="property-baths"><span>2</span> Baños</li>
+					<li class="property-baths"><span>2</span> Baño(s)</li>
 					<li class="property-parking"><span>1</span> Estac.</li>
 				</ul>
 				<p class="property-location">Club Santiago, Manzanillo</p>
