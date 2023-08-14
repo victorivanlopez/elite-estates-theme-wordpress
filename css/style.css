@@ -2,10 +2,10 @@
 
 :root {
   /* COLORS */
-  --green-dark:  #395b64;
+  --green-dark: #395b64;
   --green-light: #a5c9ca;
-  --white:       #FFFFFF;
-  --black:       #2C3333;
+  --white: #FFFFFF;
+  --black: #2C3333;
   /* FONTS */
   --font-primary: 'Open Sans', sans-serif;
   --font-headings: 'Roboto', cursive;
@@ -38,13 +38,13 @@ body {
 h1,
 h2,
 h3 {
-  margin: 0;
+  margin: 2rem 0;
   line-height: 1.2;
   font-family: var(--font-headings);
 }
 
 h1 {
-  font-size: 3.5rem;
+  font-size: 3.6rem;
 }
 
 @media (min-width: 768px) {
@@ -54,8 +54,14 @@ h1 {
 }
 
 h2 {
-  font-size: 4rem;
+  font-size: 3rem;
   font-weight: 400;
+}
+
+@media (min-width: 768px) {
+  h2 {
+    font-size: 4rem;
+  }
 }
 
 h2 span {
@@ -72,11 +78,23 @@ h3 {
 
 a {
   text-decoration: none;
+  color: #2C3333;
 }
 
 p {
   font-size: 1.6rem;
-  line-height: 1.9;
+  line-height: 1.5;
+  margin: 1rem 0;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
 }
 
 .container {
@@ -98,7 +116,8 @@ p {
   background-image: linear-gradient(90deg, var(--green-dark) 0, var(--green-dark) 50%, var(--green-light) 0, var(--green-light));
 }
 
-/* HEADER */
+/* HEADER
+--------------------------------------------- */
 
 @media (min-width: 768px) {
   body.home .site-header {
@@ -228,7 +247,74 @@ p {
   }
 }
 
-/* FOOTER */
+/* FRONT PAGE
+--------------------------------------------- */
+/* Properties */
+.properties-listing {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 30rem), 1fr));
+  gap: 2rem;
+}
+
+.property-content {
+  padding: 1.5rem 2rem;
+  background-color: var(--white);
+}
+
+.property-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.property-city,
+.property-type {
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  margin: 1rem 0;
+}
+
+@media (hover: hover) {
+  .property-city {
+    transition: color .3s;
+  }
+  .property-city:hover {
+    color: var(--green-dark);
+  }
+}
+
+.property-title {
+  font-size: 2rem;
+  margin: 0;
+}
+
+.property-price {
+  font-weight: 700;
+  font-size: 2.8rem;
+  margin: 1.5rem 0;
+}
+
+.property-meta {
+  display: flex;
+  gap: .5rem;
+  font-size: 1.4rem;
+}
+
+.property-meta li:not(:first-of-type)::before {
+  color: var(--green-dark);
+  content: "\2022";
+  display: inline-block;
+  font-weight: 700;
+  margin: 0 .6rem;
+  width: .4rem;
+}
+
+.property-location {
+  font-size: 1.2rem;
+  margin: 1.5rem 0 0 0;
+}
+
+/* FOOTER
+--------------------------------------------- */
 .footer {
   background-color: var(--green-dark);
   padding-top: 5rem;
