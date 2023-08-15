@@ -30,7 +30,7 @@
 
 		<div class="footer-widget">
 			<h3 class="footer-heading">Nosotros</h3>
-			<p class="footer-text">Nos enorgullecemos de ser tu compañero de confianza. Nuestra pasión por bienes raíces y nuestro compromiso con la excelencia nos impulsan a brindarte un servicio excepcional en cada paso del camino.</p>
+			<p class="footer-text">Nos enorgullecemos de ser tu compañero de confianza. Nuestra pasión por bienes raíces y nuestro compromiso con la excelencia nos impulsan a brindarte un servicio excepcional en cada paso del camino. Ya sea que busques una casa para tu familia o una inversión para el futuro.</p>
 		</div>
 
 		<div class="footer-widget">
