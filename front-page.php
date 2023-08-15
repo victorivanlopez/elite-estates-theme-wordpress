@@ -13,7 +13,7 @@ get_header();
 
 			<div class="property-content">
 				<div class="property-info">
-				<a href="#/colima" class="property-city">Colima</a>
+					<p class="property-city">Colima</p>
 					<p class="property-type">Venta</p>
 				</div>
 				<h3 class="property-title">Hermosa casa en venta en Colima </h3>
@@ -34,7 +34,7 @@ get_header();
 
 			<div class="property-content">
 				<div class="property-info">
-					<a href="#/colima" class="property-city">Colima</a>
+					<p class="property-city">Colima</p>
 					<p class="property-type">Renta</p>
 				</div>
 				<h3 class="property-title">Casa en renta en zona residencial</h3>
@@ -55,7 +55,7 @@ get_header();
 
 			<div class="property-content">
 				<div class="property-info">
-				<a href="#/manzanillo" class="property-city">Manzanillo</a>
+					<p class="property-city">Manzanillo</p>
 					<p class="property-type">Venta</p>
 				</div>
 				<h3 class="property-title">Casa de lujo en venta Club Santiago</h3>
