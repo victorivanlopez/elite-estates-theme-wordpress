@@ -38,7 +38,7 @@ get_header();
 					<p class="property-type">Renta</p>
 				</div>
 				<h3 class="property-title">Casa en renta en zona residencial</h3>
-				<p class="property-price">MXN  5,700</p>
+				<p class="property-price">MXN 5,700</p>
 				<ul class="property-meta">
 					<li class="property-beds"><span>2</span> Rec.</li>
 					<li class="property-baths"><span>1</span> Baño(s)</li>

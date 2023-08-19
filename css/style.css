@@ -252,9 +252,12 @@ img {
   gap: 2rem;
 }
 
+.property {
+  background-color: var(--white);
+}
+
 .property-content {
   padding: 1.5rem 2rem;
-  background-color: var(--white);
 }
 
 .property-info {
@@ -270,7 +273,7 @@ img {
 }
 
 .property-title {
-  font-size: 2rem;
+  font-size: 1.8rem;
   margin: 0;
 }
 
