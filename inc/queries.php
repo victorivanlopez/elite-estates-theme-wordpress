@@ -8,6 +8,12 @@ function elite_estates_list_properties($cantidad = -1)
     $args = array(
       'post_type' => 'properties',
       'posts_per_page' => $cantidad
+      // 'meta_query' => array(
+      //   array(
+      //     'key'   => 'parking',
+      //     'value' => '1',
+      //   )
+      // )
     );
 
     $properties = new WP_Query($args);

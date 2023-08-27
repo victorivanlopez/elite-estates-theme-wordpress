@@ -74,8 +74,51 @@
 					<div class="header-content">
 						<h1 class="header-heading">Bienvenido a la excelencia inmobiliaria con Elite Estates</h1>
 
-						<!-- TODO: Buscador -->
+						<form class="form">
+							<div class="field">
+								<!-- <label for="city">Tipo de Propiedad</label> -->
+								<select name="rent_or_buy" id="rent_or_buy">
+									<!-- <option value="" selected disabled>Tipo de Propiedad</option> -->
+									<?php
+									$cities = get_field_object('field_64dffc5537bd8')['choices'];
+									foreach ($cities as $value => $label) {
+										echo '<option value="' . esc_attr($value) . '">' . esc_html($label) . '</option>';
+									}
+									?>
+								</select>
+							</div>
 
+							<div class="field">
+								<!-- <label for="city">Cuidad</label> -->
+								<select name="city" id="city">
+									<option value="" selected disabled>Ciudad</option>
+									<?php
+									$cities = get_field_object('field_64e002ed6c14f')['choices'];
+									foreach ($cities as $value => $label) {
+										echo '<option value="' . esc_attr($value) . '">' . esc_html($label) . '</option>';
+									}
+									?>
+								</select>
+							</div>
+
+							<div class="field">
+								<!-- <label for="city">Cuidad</label> -->
+								<select name="type" id="type">
+									<option value="" selected disabled>Tipo de Propiedad</option>
+									<?php
+									$terms = get_terms(array(
+										'taxonomy' => 'type', // Reemplaza 'caracteristicas' con el nombre de tu taxonomía
+										'hide_empty' => false,
+									));
+									foreach ($terms as $term) {
+										echo '<option value="' . esc_attr($term->slug) . '">' . esc_html($term->name) . '</option>';
+									}
+									?>
+								</select>
+							</div>
+
+							<input type="submit" value="Buscar">
+						</form>
 					</div>
 				</div>
 			<?php endif; ?>
