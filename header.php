@@ -74,7 +74,7 @@
 					<div class="header-content">
 						<h1 class="header-heading">Bienvenido a la excelencia inmobiliaria con Elite Estates</h1>
 
-						<form class="form">
+						<form action="<?php echo esc_url(home_url('/propiedades')); ?>" class="form">
 							<div class="field">
 								<!-- <label for="city">Tipo de Propiedad</label> -->
 								<select name="rent_or_buy" id="rent_or_buy">
