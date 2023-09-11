@@ -74,8 +74,7 @@ function elite_estates_list_properties($cantidad = -1)
     } else { ?>
       <div>
         <h2 class="page-title"><?php esc_html_e('En este momento no hay propiedades.', 'elite_estates'); ?></h2>
-        <p>Prueba realizando otra búsqueda.</p>
-        <?php get_template_part( 'template-parts/form', 'search' ); ?>
+        <p>Prueba realizando otra búsqueda eliminando algunos filtros.</p>
       </div>
     <?php } ?>
   </div>

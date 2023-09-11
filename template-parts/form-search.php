@@ -4,7 +4,7 @@ $city = $_GET['city'] ?? '';
 $type = $_GET['type'] ?? '';
 ?>
 
-<form action="<?php echo esc_url(home_url('/propiedades')); ?>" class="form">
+<form action="<?php echo esc_url(home_url('/propiedades')); ?>" class="form-search">
   <div class="field">
     <!-- <label for="city">Tipo de Propiedad</label> -->
     <select name="rent_or_buy" id="rent_or_buy">
