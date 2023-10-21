@@ -16,8 +16,8 @@ get_header();
         ));
         foreach ($terms as $term) : ?>
           <div class="field-checkbox">
-            <input type="checkbox" id="house" name="house" value="<?php echo esc_attr($term->slug) ?>">
-            <label for="house"><?php echo esc_html($term->name)  ?></label>
+            <input type="checkbox" id="<?php echo esc_attr($term->slug) ?>" name="<?php echo esc_attr($term->slug) ?>" value="<?php echo esc_attr($term->slug) ?>">
+            <label for="<?php echo esc_attr($term->slug) ?>"><?php echo esc_html($term->name)  ?></label>
           </div>
         <?php endforeach; ?>
       </div>
